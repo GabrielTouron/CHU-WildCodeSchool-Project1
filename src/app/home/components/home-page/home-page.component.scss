@@ -1,1 +1,35 @@
 @import "./src/styles";
+
+/* large screens */
+@media only screen and (min-width: 961px) {
+  .grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  /* Start Matthieu */
+  .last-news {
+    grid-auto-columns: auto / span 2;
+  }
+  /* End Matthieu */
+
+  /* Start Rachid */
+  .news-flow {
+    grid-row: auto / span 3;
+  }
+  /* End Matthieu */
+
+  /* Start Rachid */
+  .form {
+
+  }
+  /* End Matthieu */
+
+
+  /* Small screens */
+  @media only screen and (max-width: 961px) {
+
+  }
+
+}
