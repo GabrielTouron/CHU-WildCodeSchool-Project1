@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "projet1-CHU"
+    }
+  },
+  "defaultProject": "projet1-CHU",
+  "cli": {
+    "analytics": "ee5b2602-6e90-4ae0-a43e-a9493ca8162a"
+  }
 }
