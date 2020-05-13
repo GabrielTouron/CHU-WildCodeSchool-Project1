@@ -1,11 +1,54 @@
 @import "./src/styles";
 
+/* Global */
+
+/* Start Gabriel */
+.news-flow {
+  box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
+              0 1px 3px 1px rgba(66, 66, 66, 0.16);
+
+  .news-flow-title {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    color: $primary;
+  }
+
+  .news {
+    border-top: 1px solid $light-primary;
+    transition: 400ms ease;
+    padding: 1.5rem 2rem;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .news-title {
+      text-decoration: underline;
+    }
+
+    .news-content {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .news:hover {
+    background: $light-primary;
+    cursor: pointer;
+  }
+
+  /* End Gabriel */
+}
+
 /* large screens */
 @media only screen and (min-width: 961px) {
   .grid {
     display: grid;
     gap: 3rem;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
 
   /* Start Matthieu */
@@ -14,22 +57,34 @@
   }
   /* End Matthieu */
 
-  /* Start Rachid */
+  /* Start Gabriel */
   .news-flow {
     grid-row: auto / span 3;
+
+    .news-content {
+      max-width: 20em;
+    }
   }
-  /* End Matthieu */
+
+  /* End Gabriel */
 
   /* Start Rachid */
   .form {
 
   }
   /* End Matthieu */
-
+}
 
   /* Small screens */
   @media only screen and (max-width: 961px) {
 
-  }
+    /* Start Gabriel */
+    .news-flow {
+      grid-row: auto / span 3;
 
+      .news-content {
+        max-width: 100%;
+      }
+    }
+    /* End Gabriel */
 }

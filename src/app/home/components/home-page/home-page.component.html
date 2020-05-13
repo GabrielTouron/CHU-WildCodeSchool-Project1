@@ -8,11 +8,18 @@
   </div>
   <!-- End Matthieu -->
 
-  <!-- Start Rachid -->
+  <!-- Start Gabriel -->
   <div class="news-flow">
-
+    <h2 class="news-flow-title">Actualité</h2>
+    <div *ngFor="let news of newsFlow; let index = index" class="news">
+      <div class="row">
+        <h3 class="news-title">{{index + 1}} {{news.title}}</h3>
+        <span class="news-date">{{news.date}}</span>
+      </div>
+      <p class="news-content">{{news.content}}</p>
+    </div>
   </div>
-  <!-- End Rachid -->
+  <!-- End Gabriel -->
 
   <!-- Start Rachid -->
   <div class="form">
