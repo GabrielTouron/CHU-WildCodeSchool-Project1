@@ -1,0 +1,33 @@
+
+@import "./src/styles"; 
+
+footer li {
+    list-style: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer h3 {
+    text-align: center;
+    padding-top: 1%;
+}
+
+#container{
+    display: flex;
+    flex-direction : row;
+    justify-content: space-around;
+    
+}
+
+footer {
+    text-align: justify;
+    background-color: $primary;
+ 
+}
+
+a {
+     font-size: 16 px; 
+     color: $secondary;
+     font-family: 'Roboto', sans-serif;
+     
+}
