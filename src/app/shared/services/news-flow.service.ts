@@ -5,9 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class NewsFlowService {
 
-  // fake data
-  newsFlow = [
+   // fake data
+   newsFlow = [
     {
+      id: 0,
       title: "Une chute terrible",
       date: "14/05/2020",
       content:" Ce jeudi, le jeune Hugo, hospitalisé\n" +
@@ -24,6 +25,7 @@ export class NewsFlowService {
         "      retrouver le CHU en toute confiance. La sécurité est notre priorité."
     },
     {
+      id: 1,
       title: "Une erreur médicale exceptionnelle",
       date: "12/05/2020",
       content:"Simple distraction ou incompétence ? La question était sur toutes les lèvres hier à Bordeaux.\n" +
@@ -39,6 +41,7 @@ export class NewsFlowService {
         "      une ou deux fois d’enlever la rate en même temps que le foie » concède toutefois l’un d’entre eux."
     },
     {
+      id: 2,
       title: "Le CHU se déconfine",
       date: "11/05/2020",
       content:" L'hopital est prêt à acceuillir de nouveaux patients. Nous avons des places disponibles, venez nombreux!\n" +
@@ -46,6 +49,7 @@ export class NewsFlowService {
         "      Vous nous avez manqué! A très vite!"
     },
     {
+      id: 3,
       title: "L'hopital est en vacances",
       date: "07/05/2020",
       content:"Le pont du 08 mai approchant, nos équipes prennent quelques jours de repos. De ce fait, l'hopital ferme ses portes\n" +
@@ -55,8 +59,6 @@ export class NewsFlowService {
         "       Bonnes vacances à tous!"
     }
   ]
-
+  
   constructor() { }
-
-
 }
