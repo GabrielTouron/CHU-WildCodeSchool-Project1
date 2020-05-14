@@ -3,9 +3,11 @@
 /* Global */
 
 /* Start Gabriel */
+
 .news-flow {
   box-shadow: 0 1px 1px 0 rgba(66, 66, 66, 0.08),
               0 1px 3px 1px rgba(66, 66, 66, 0.16);
+  z-index: 2;
 
   .news-flow-title {
     text-align: center;
@@ -39,9 +41,8 @@
     background: $light-primary;
     cursor: pointer;
   }
-
-  /* End Gabriel */
 }
+/* End Gabriel */
 
 /* large screens */
 @media only screen and (min-width: 961px) {
@@ -111,6 +112,7 @@
   @media only screen and (max-width: 961px) {
 
     /* Start Gabriel */
+
     .news-flow {
       grid-row: auto / span 3;
 
