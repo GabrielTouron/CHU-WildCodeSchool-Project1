@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { faCoffee, faAddressCard, faHamburger, faUser, faBars, faTimes, faDiceD20, faClinicMedical, faPeopleCarry, faHospitalSymbol } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
@@ -7,7 +8,6 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
-
 
 export class SidebarComponent implements OnInit {
   constructor(library: FaIconLibrary) {
@@ -28,3 +28,7 @@ export class SidebarComponent implements OnInit {
 
 }
 
+
+
+
+ 
