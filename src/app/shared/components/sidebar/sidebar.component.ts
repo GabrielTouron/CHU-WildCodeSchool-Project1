@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { faCoffee, faAddressCard, faHamburger, faUser, faBars, faTimes, faDiceD20, faClinicMedical, faPeopleCarry, faHospitalSymbol } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faAddressCard, faHamburger, faUser, faBars, faTimes, faDiceD20, faClinicMedical, faPeopleCarry, faHospitalSymbol, faStethoscope } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -13,6 +13,7 @@ export class SidebarComponent implements OnInit {
   constructor(library: FaIconLibrary) {
     
     library.addIcons(faCoffee);
+    library.addIcons(faStethoscope);
     library.addIcons(faPeopleCarry);
     library.addIcons(faUser);
     library.addIcons(faAddressCard);
