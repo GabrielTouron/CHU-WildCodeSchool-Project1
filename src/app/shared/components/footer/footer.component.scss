@@ -29,13 +29,17 @@ a {
      font-size: 16 px; 
      color: $secondary;
      font-family: 'Roboto', sans-serif;
+     overflow-wrap: break-word;
+    
      
 }
+
 
 @media only screen and (max-width: 961px) {
 
          #container {
         display: block;
+        
       }
     }
     
