@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsFlowService } from 'src/app/shared/services/news-flow.service';
 import { Router, ActivatedRoute } from '@angular/router';
-
+ 
 @Component({
   selector: 'app-news-detail',
   templateUrl: './news-detail.component.html',
@@ -10,13 +10,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class NewsDetailComponent implements OnInit {
   newsFlowFakeBackend: object[];
   newsFlowId: number;
-  newsFlow: object;
+  newsFlow: any; 
 
   constructor(
     private newsFlowService: NewsFlowService,
     private Router: Router,
-    private route: ActivatedRoute)
-    { }
+    private route: ActivatedRoute
+  ){ }
 
   ngOnInit(): void {
     this.newsFlowFakeBackend = this.newsFlowService.newsFlow;
@@ -25,7 +25,7 @@ export class NewsDetailComponent implements OnInit {
 
   getRouteParam() {
     const routerSubscription = this.route.paramMap.subscribe(params => {
-      if ( params && params.get('id')) {
+      if (params && params.get('id')) {
         const routeNewsFlowId = Number(params.get('id'));
         this.newsFlowId = routeNewsFlowId;
         this.getOneNews(this.newsFlowId);
@@ -36,5 +36,5 @@ export class NewsDetailComponent implements OnInit {
   getOneNews(id: number) {
     this.newsFlow = this.newsFlowFakeBackend[id];
   }
-
 }
+
