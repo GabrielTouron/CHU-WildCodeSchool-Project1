@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import {NewsFlowService} from "../../services/NewsFlow.service";
+import { NewsFlowService } from 'src/app/shared/services/news-flow.service';
+// import { News } from 'src/app/shared/models/news.model';
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +9,7 @@ import {NewsFlowService} from "../../services/NewsFlow.service";
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  newsFlow;
+  newsFlow: object[];
 
   constructor(private newsFlowService: NewsFlowService){ }
 
