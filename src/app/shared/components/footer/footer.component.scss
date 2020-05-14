@@ -31,3 +31,11 @@ a {
      font-family: 'Roboto', sans-serif;
      
 }
+
+@media only screen and (max-width: 961px) {
+
+         #container {
+        display: block;
+      }
+    }
+    
