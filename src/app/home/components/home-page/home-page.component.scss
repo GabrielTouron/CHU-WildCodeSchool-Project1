@@ -65,8 +65,11 @@
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+
+    
     margin-top: 240px;
-    }
+
+  }
 
   .title {
     background-color : $primary;
@@ -85,11 +88,13 @@
     padding-bottom : 2%;
     
   }
+  
   .image {
     float:left;
     margin-right: 1em;
   }
 
+  
   /* End Matthieu */
 
   /* Start Gabriel */
@@ -170,3 +175,4 @@
   }
 
 /* End Matthieu */
+
