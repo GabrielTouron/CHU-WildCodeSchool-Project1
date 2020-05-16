@@ -1,0 +1,56 @@
+@import "./src/styles";
+header {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to right, $light-primary, $primary);
+
+  .chu {
+    color: $dark-primary;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+
+/* large screens */
+@media only screen and (min-width: 961px) {
+  header {
+    height: 300px;
+    clip-path: polygon(50% 0%, 100% 0px, 516.25% 105.45%, 100% 108.92%, 1px 39.00%, 0px 0px);
+  }
+
+  h1 {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .chu {
+    font-size: 5rem;
+  }
+}
+
+/* small screens */
+@media only screen and (max-width: 961px) {
+  header {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  p {
+    display: none;
+  }
+}

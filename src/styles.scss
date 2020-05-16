@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Light theme
+
+$primary: #e65100;
+$light-primary: #ff833a;
+$dark-primary: #ac1900;
+
+// Dark theme
+$secondary: #212121;
+$light-secondary: #484848;
+$dark-secondary: #000000;
+
+// Size & layout
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Font
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
