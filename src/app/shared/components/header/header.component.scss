@@ -39,7 +39,7 @@ header {
 @media only screen and (max-width: 961px) {
   header {
     height: 100px;
-    position: fixed;
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
